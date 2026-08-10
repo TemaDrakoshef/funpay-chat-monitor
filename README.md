@@ -1,4 +1,4 @@
-# funpay-chat
+# Funpay Chat
 
 Мониторинг чата FunPay через неофициальный API.
 
