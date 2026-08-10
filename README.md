@@ -11,6 +11,34 @@
 
 ## Установка
 
+### Клонирование репозитория
+
+```bash
+git clone https://github.com/TemaDrakoshef/funpay-chat-monitor.git
+cd funpay-chat-monitor
+```
+
+### Через обычный Python
+
+Требуется Python 3.12 или новее.
+
+```bash
+python -m venv .venv
+```
+
+Активируйте виртуальное окружение:
+
+- Windows (PowerShell): `.venv\Scripts\Activate.ps1`
+- Linux / macOS: `source .venv/bin/activate`
+
+Установите зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Через uv
+
 ```bash
 uv sync
 ```
@@ -18,8 +46,14 @@ uv sync
 ## Запуск
 
 ```bash
+python main.py                               # чат game-41, интервал 2 c
+python main.py --node game-1 --interval 1   # другой интервал и чат
+```
+
+
+```bash
 uv run python main.py                               # чат game-41, интервал 2 c
-uv run python main.py --node game-41 --interval 1   # другой интервал и чат
+uv run python main.py --node game-1 --interval 1   # другой интервал и чат
 ```
 
 Список нод чата (примеры): `game-41`, `game-20`
@@ -33,7 +67,6 @@ src/
 ├── chat_client.py  # клиент API чата (csrf_token, POST /runner/)
 ├── parser.py       # парсинг HTML сообщений (автор, дата, текст)
 ├── formatting.py   # цвета пользователей и форматирование вывода
-├── logo.py         # логотип и вотермарка
 ├── logger.py       # настройка логирования (rich)
 ├── main.py         # точка входа + асинхронный цикл мониторинга
 └── __main__.py     # запуск через python -m src
