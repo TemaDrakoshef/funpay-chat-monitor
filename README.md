@@ -1,6 +1,15 @@
-# Funpay Chat
+<div align="center">
+<h1>FunPay Chat Monitor</h1>
 
-Мониторинг чата FunPay через неофициальный API.
+<img width="700" alt="image" src="./docs/img/preview.png" />
+
+<p><strong>Мониторинг чата FunPay через неофициальный API.</strong></p>
+
+<img alt="Static Badge" src="https://img.shields.io/badge/tag-v0.1.0-8A2BE2?style=flat&logo=task&logoColor=8A2BE2&labelColor=gray">
+<img alt="Static Badge" src="https://img.shields.io/badge/python-v3.12-FBDE02?style=flat&logo=python&logoColor=FBDE02&labelColor=gray">
+<img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-12C4C4?style=flat&logo=gitbook&logoColor=12C4C4">
+<br>
+</div>
 
 ## Возможности
 
